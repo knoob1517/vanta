@@ -24,7 +24,7 @@ gcc main.c -o vanta.exe
 ### 2. Running a Script
 By default, the interpreter looks for the file in filename and executes it in the same directory:
 ```bash
-./vanta.exe \[filename\]
+./vanta.exe [filename]
 ```
 
 You can modify filename to execute more script!
