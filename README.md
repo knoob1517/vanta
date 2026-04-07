@@ -22,12 +22,12 @@ gcc main.c -o vanta.exe
 ```
 
 ### 2. Running a Script
-By default, the interpreter looks for and executes a file named `test.vt` in the same directory:
+By default, the interpreter looks for the file in filename and executes it in the same directory:
 ```bash
-./vanta.exe
+./vanta.exe \[filename\]
 ```
 
-You can modify it on line 428 of the source code! (warning: compiled version can't change) 
+You can modify filename to execute more script!
 
 ## 📝 Basic Syntax
 
@@ -73,10 +73,10 @@ printf(lucky_num)
 
 ## 🛠 Project Structure
 - `main.c`: Core interpreter source code (Lexer, Parser, AST, Evaluator).
-- `test.vt`: The standard testing script for all Vanta features.
+- `test.vt`: The standard testing script for all Vanta features. (not available currently)
 
 ## 🤝 Contribution
 The project is currently in its **Golden Version** (Stable). Contributions regarding control flow (`if-else`), loops (`while`), or arrays are welcome for future releases.
 
 ---
-**Vanta Language** - Developed by **knoob1517** with a passion for programming language theory.
+**Vanta Language** - Developed by **k_noob** with a passion for programming language theory.
