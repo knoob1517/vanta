@@ -54,6 +54,24 @@ printf("Your lucky number between 1-100 is:")
 printf(lucky_num)
 ```
 
+### Power and modulo
+```vanta
+let x = 1 % 4  # 1
+printf(x)
+
+let y = 2 ^ 2 ^ 3  # 256
+printf(y)
+```
+
+### If (basic)
+```vanta
+let x = 1
+if x printf("x=1")  # will run
+
+let y = 0
+if y printf("this is not running")  # will not run
+```
+
 ## 📚 Built-in Functions
 
 | Function | Description | Example |
@@ -76,7 +94,7 @@ printf(lucky_num)
 - `test.vt`: The standard testing script for all Vanta features. (not available currently)
 
 ## 🤝 Contribution
-The project is currently in its **Golden Version** (Stable). Contributions regarding control flow (`if-else`), loops (`while`), or arrays are welcome for future releases.
+The project is currently in its **Golden Version** (Stable). But in some case it's not fully stable, expected bugs in those new version, so it might be do it?
 
 ---
 **Vanta Language** - Developed by **k_noob** with a passion for programming language theory.
