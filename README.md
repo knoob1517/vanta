@@ -1,100 +1,160 @@
-# 🌌 Vanta Programming Language
+# Vanta Programming Language
 
-**Vanta** is a minimalist interpreted programming language written entirely in C. This project focuses on **stability**, **UTF-8 support** (allowing for localized variable names), and an intuitive, visual error-reporting system.
+**Vanta** is a minimalist interpreted programming language written in C. It focuses on stability, UTF-8 support, and clear error reporting.
 
 [![Release](https://img.shields.io/badge/release-golden_version-gold)](https://github.com/knoob1517/vanta/releases/tag/golden_version)
 
-## ✨ Key Features
+---
 
-- **Stable One-Pass Parser**: Optimized to process code in a single pass without deep recursion, preventing infinite loops and ensuring high reliability.
-- **Full UTF-8 Support**: Supports non-ASCII characters in variable names (e.g., `let kết_quả = 10` or `let lượng_mưa = 50`).
-- **Smart Input**: The `input()` function automatically detects whether the user entered a **Number** or a **String**, eliminating the need for manual casting.
-- **Negative Number Support**: Full support for unary minus operations (e.g., `let x = -144`).
-- **Visual Error Reporting**: Provides GCC-style error messages with line/column numbers and a `^` pointer pointing directly to the syntax error.
-- **Rich Built-in Library**: Integrated functions for string manipulation, mathematics, and system control.
+## Features
 
-## 🚀 Getting Started
+* **One-pass parser**
+  Processes code in a single pass with predictable behavior.
 
-### 1. Compilation
-You only need a C compiler (GCC or MSVC) on Windows:
+* **UTF-8 support**
+  Allows non-ASCII variable names:
+
+  ```vanta
+  let kết_quả = 10
+  ```
+
+* **Smart input**
+  `input()` automatically detects number or string.
+
+* **Unary minus support**
+  Handles negative values:
+
+  ```vanta
+  let x = -144
+  ```
+
+* **Error reporting**
+  Displays line/column and highlights exact error location.
+
+* **Built-in functions**
+  Includes utilities for math, strings, and system control.
+
+---
+
+## Getting Started
+
+### Compile
+
+Requires a C compiler (GCC or MSVC):
+
 ```bash
 gcc main.c -o vanta.exe
 ```
 
-### 2. Running a Script
-By default, the interpreter looks for the file in filename and executes it in the same directory:
+### Run
+
 ```bash
 ./vanta.exe [filename]
 ```
 
-You can modify filename to execute more script!
+If no file is provided, it defaults to `main.vt`.
 
-## 📝 Basic Syntax
+---
 
-### Variables and Arithmetic
+## Syntax Overview
+
+### Variables and arithmetic
+
 ```vanta
-# This is a comment
 let a = 10
 let b = 20
 let result = (a + b) * 5 / -2
 printf(result)
 ```
 
-### Strings and UTF-8 Identifiers
+### Strings and UTF-8
+
 ```vanta
-let tên = input("What is your name? ")
-printf("Welcome, " + tên)
-printf(upper(tên)) # Convert to uppercase
+let name = input("What is your name? ")
+printf("Welcome, " + name)
+printf(upper(name))
 ```
 
-### Random Numbers (Two Parameters)
+### Random numbers
+
 ```vanta
-let lucky_num = rand(1, 100)
-printf("Your lucky number between 1-100 is:")
-printf(lucky_num)
+let n = rand(1, 100)
+printf(n)
 ```
 
 ### Power and modulo
+
 ```vanta
-let x = 1 % 4  # 1
+let x = 1 % 4
 printf(x)
 
-let y = 2 ^ 2 ^ 3  # 256
+let y = 2 ^ 2 ^ 3
 printf(y)
 ```
 
-### If (basic)
+### If statement
+
 ```vanta
 let x = 1
-if x printf("x=1")  # will run
 
-let y = 0
-if y printf("this is not running")  # will not run
+if x == 1 {
+    printf("x = 1")
+}
+elseif x == 2 {
+    printf("x = 2")
+}
+else {
+    printf("other")
+}
 ```
 
-## 📚 Built-in Functions
+### While loop
 
-| Function | Description | Example |
-| :--- | :--- | :--- |
-| `printf(val)` | Prints value to console | `printf("Hello")` |
-| `input(msg)` | Gets user input with prompt | `let x = input("?")` |
-| `rand(min, max)`| Generates random number in range | `rand(1, 100)` |
-| `sqrt(n)` | Calculates square root | `sqrt(144)` |
-| `abs(n)` | Returns absolute value | `abs(-5)` |
-| `len(str)` | Returns string length | `len("Vanta")` |
-| `upper(str)` | Converts string to uppercase | `upper("vanta")` |
-| `lower(str)` | Converts string to lowercase | `lower("VANTA")` |
-| `type(val)` | Returns type (0: Num, 1: Str) | `type(10)` |
-| `sleep(ms)` | Pauses execution (milliseconds) | `sleep(2000)` |
-| `clear` | Clears the console screen | `clear` |
-| `exit` | Terminates the program | `exit` |
+```vanta
+let i = 0
 
-## 🛠 Project Structure
-- `main.c`: Core interpreter source code (Lexer, Parser, AST, Evaluator).
-- `test.vt`: The standard testing script for all Vanta features. (not available currently)
-
-## 🤝 Contribution
-The project is currently in its **Golden Version** (Stable). But in some case it's not fully stable, expected bugs in those new version, so it might be do it?
+while i < 5 {
+    printf(i)
+    let i = i + 1
+}
+```
 
 ---
-**Vanta Language** - Developed by **k_noob** with a passion for programming language theory.
+
+## Built-in Functions
+
+| Function         | Description         | Example              |
+| ---------------- | ------------------- | -------------------- |
+| `printf(val)`    | Print value         | `printf("Hello")`    |
+| `input(msg)`     | Read input          | `let x = input("?")` |
+| `rand(min, max)` | Random number       | `rand(1, 100)`       |
+| `sqrt(n)`        | Square root         | `sqrt(144)`          |
+| `abs(n)`         | Absolute value      | `abs(-5)`            |
+| `len(str)`       | String length       | `len("Vanta")`       |
+| `upper(str)`     | Uppercase           | `upper("vanta")`     |
+| `lower(str)`     | Lowercase           | `lower("VANTA")`     |
+| `type(val)`      | Type (0=num, 1=str) | `type(10)`           |
+| `sleep(ms)`      | Pause execution     | `sleep(1000)`        |
+| `clear`          | Clear console       | `clear`              |
+| `exit`           | Exit program        | `exit`               |
+
+---
+
+## Project Structure
+
+* `main.c` — interpreter core (lexer, parser, AST, evaluator)
+* `test.vt` — test script (optional)
+
+---
+
+## Status
+
+Current release: **Golden Version**
+
+The language is stable for core features, but may still contain edge-case bugs as development continues.
+
+---
+
+## Author
+
+Developed by **k_noob**.
