@@ -14,7 +14,7 @@ we have:
 1. simple keywords: <br>
    code files are very light because of simple syntax!
 2. basic function: <br>
-   we have print (printf before c005), input, rand, len, abs, sqrt, and more!
+   we have print (printf before c005), input, rand, len, abs, fabs (c008+), sqrt, and more!
 3. function: <br>
    we have fn to make functions!
 4. math: <br>
