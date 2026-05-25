@@ -15,14 +15,17 @@ we have:
    code files are very light because of simple syntax!
 2. basic function: <br>
    we have print (printf before c005), input, rand, len, abs, sqrt, and more!
-3. math: <br>
+3. function: <br>
+   we have fn to make functions!
+4. math: <br>
    math operation like +, -, *, /, %, ** (^ before c005) are fully support!
-4. if, elseif, else, while: <br>
+5. if, elseif, else, while: <br>
    have and, or, not keywords, greater, smaller and equal with mix
-5. concat (c006+)
+6. concat (c006+)
    you can use concat (..) to connect!
-6. boolean (c006+)
+7. boolean (c006+)
    true and false keywords!
+8. float (c007+)
 
 ## my own question
 
