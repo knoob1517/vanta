@@ -21,11 +21,12 @@ we have:
    math operation like +, -, *, /, %, ** (^ before c005) are fully support!
 5. if, elseif, else, while: <br>
    have and, or, not keywords, greater, smaller and equal with mix
-6. concat (c006+)
+6. concat (c006+): <br>
    you can use concat (..) to connect!
-7. boolean (c006+)
+7. boolean (c006+): <br>
    true and false keywords!
-8. float (c007+)
+8. float (c007+): <br>
+   floating number are supported!
 
 ## my own question
 
