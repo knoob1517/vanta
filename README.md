@@ -27,6 +27,8 @@ we have:
    true and false keywords!
 8. float (c007+): <br>
    floating number are supported!
+9. flags!
+   see c009 log to see how to use flags!
 
 ## my own question
 
