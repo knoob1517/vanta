@@ -35,6 +35,6 @@ we have:
 - is vanta an interpreter, or a compiler? <br>
    it's an interpreter!
 - how many lines are there in the source code? <br>
-   currently (c006) is 1228 lines.
+   currently (c009) is 1340 lines.
 - what make you made vanta? <br>
    ummm i'm bored at that time?
