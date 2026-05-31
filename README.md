@@ -27,8 +27,10 @@ we have:
    true and false keywords!
 8. float (c007+): <br>
    floating number are supported!
-9. flags!
+9. flags! <br>
    see c009 log to see how to use flags!
+10. lists (c010+) <br>
+   lists can contains str, int, float, bool, or even itself!
 
 ## my own question
 
