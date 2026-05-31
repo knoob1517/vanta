@@ -28,7 +28,7 @@ int skip_error = 0;
 #define ANSI_BOLD   "\x1b[1m"
 #define ANSI_RED   "\x1b[31m"
 #define ANSI_RESET "\x1b[0m"
-#define version "c010.26.05.28"
+#define version "c010.26.05.31"
 
 /* ansi enabler */
 
