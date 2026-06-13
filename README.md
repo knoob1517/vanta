@@ -1,42 +1,56 @@
-# vanta!
+# vanta
 
-vanta is a hobby programming language, created by me, k_noob!
+## about vanta
+vanta is a hobby language that is built in c.
+author: k_noob
 
-## important notes
+## highlight
 
-vanta is a HOBBY language, so it might have some bugs in use!
-DO NOT USE FOR PRODUCTION USE! UNSTABLE!
+### features:
+- variables
+- functions
+- if / elseif / else
+- while
+- return
+- int and float
+- boolean
+- list
+- const
+- string concat (..)
+- operators + - * / % **
+- assign = += -= /= //= *=
 
-## features
+---
 
-we have:
+### builtins:
+- print(str) to print to console
+- input(prom) to take user input
+- rand(min, max) to get a random number
+- len(str or list) returns how long the str/list is
+- abs(int) to make neq num to pos (int)
+- fabs(float) to make neq num to pos (float)
+- sqrt(num) to get the sqrt
+- join(list, sep) to join items in a list with the sep
+- startswith(str, pref) to check if a string starts with prefix
+- split(str, delim) to split a str to a list
+- endswith(str, suff) to check if a string ends with a suffix
+- replace(str, old, new) to replace in a string
+- push(list, obj), pop(list) to push and pop in a list
+- contains(str, str) to check if the second string is in the first string
+- insert(list, index, obj) to insert to a list in the specfic index
+- remove(list, index) to remove an obj at the specfic index
 
-1. simple keywords: <br>
-   code files are very light because of simple syntax!
-2. basic function: <br>
-   we have print (printf before c005), input, rand, len, abs, fabs (c008+), sqrt, and more!
-3. function: <br>
-   we have fn to make functions!
-4. math: <br>
-   math operation like +, -, *, /, %, ** (^ before c005) are fully support!
-5. if, elseif, else, while: <br>
-   have and, or, not keywords, greater, smaller and equal with mix
-6. concat (c006+): <br>
-   you can use concat (..) to connect!
-7. boolean (c006+): <br>
-   true and false keywords!
-8. float (c007+): <br>
-   floating number are supported!
-9. flags! <br>
-   see c009 log to see how to use flags!
-10. lists (c010+) <br>
-   lists can contains str, int, float, bool, or even itself!
+__all of the features listed above might only exist on the latest version.__ 
 
-## my own question
+---
 
-- is vanta an interpreter, or a compiler? <br>
-   it's an interpreter!
-- how many lines are there in the source code? <br>
-   currently (c009) is 1340 lines.
-- what make you made vanta? <br>
-   ummm i'm bored at that time?
+## my own question when i was making it:
+- what can it be a compiler or an interpreter?
+  + i choose interpreter
+- how long can it be?
+  + 2190 lines on the latest c011.26.06.13
+ 
+## notes:
+
+this project was not for production. please DO NOT USE FOR PRODUCTION ENVIROMENTS! <br> <br>
+this project is open source, so you can make your own language by this!
