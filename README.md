@@ -40,7 +40,8 @@ author: k_noob
 - insert(list, index, obj) to insert to a list in the specfic index
 - remove(list, index) to remove an obj at the specfic index
 
-__all of the features listed above might only exist on the latest version.__ 
+__all of the features listed above might only exist on the latest version.__ <br>
+__see the changelog to find the best version for you!__
 
 ---
 
